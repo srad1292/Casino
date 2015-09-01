@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang = "en">
+<head>
+    <meta charset = "utf-8">
+    <title>Contact Us</title>
+</head>
+<body>
+    <h1>Contact Us</h1>
+    <form name = "input" action = "demo_form_action.html" method = "get">
+        <fieldset>
+            <legend>Your Message:</legend>
+            <table>
+                <tr>
+                    <td>To:</td>
+                    <td><input type = "email" name = "txtTo" readonly="readonly"
+                        id = "emailTo" size = "25" value = "Casion Showdown Developers"></td>
+                </tr>
+                <tr>
+                    <td>Your Email:</td>
+                    <td><input type = "email" name = "txtform" id = "emailForm"
+                        size = "25" maxlength = "250" required></td>
+                </tr>
+                <tr>
+                    <td>Message:</td>
+                    <td><textarea name = "txtBody" id = "emailBody" cols = "50" required
+                        rows = "10" placeholder = "Please write your comment / questions here."></textarea></td>
+                </tr>
+             </table>
+         </fieldset>
+         <br>
+         <fieldset>
+             <legend>How You Found Us:</legend>
+             <table>
+                <tr>
+                    <td>How did you hear of our site?</td>
+                    <td>
+                        <select name = "selReference">
+                            <option value = "google">Google</option>
+                            <option value = "Friend">Friend</option>
+                            <option value = "CS Client-Side Professor">CS Client-Side Professor</option>
+                            <option value = "other">Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr><tr>
+                <tr>
+                    <td>Casion Showdown followers</td>
+                    <td><input type = "checkbox" name = "chkBody" id = "followerSignUp">
+                    Please check the box if you would like to become a Casino Showdown follower!</td>
+                </tr>
+            </table>
+        </fieldset>
+        <br><br>
+        <input type = "submit" value = "Submit">
+        </form>
+</body>
+</html>
+

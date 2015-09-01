@@ -1,0 +1,109 @@
+html {
+    background: url("../img/bg.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+div.container {
+    margin-left: auto;
+    margin-right: auto;
+    height: 600px;
+    width: 800px;
+    background: url("../img/tableBackground.png");
+   
+}
+
+
+div.ai1 {
+    float: left;
+}
+
+
+div.player {
+    float: right;
+    padding-right: 25px;
+}
+
+
+div.showing {
+    padding-top: 173px;
+    margin-left: 22.5%;
+}
+
+/*
+ * Div to hold ai1 and ai2 on the same row.
+ */
+div.playersContainer {
+    width: 800px;
+    padding-left: 12px;
+    padding-top: 105px;
+}
+
+button {
+    margin-right: 10px;
+    font-size: 1.35em;
+    font-family: vladimir script;
+    font-weight: bolder;
+    width: 110px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.buttons {
+    padding-top: 60px;
+    margin-left: 20%;
+}
+
+.name {
+    margin-top: -3px;
+    color: white;
+    font-size: 1.15em;
+    margin-bottom: -3px;
+}
+
+.pot {
+    margin-top:-3px;
+    color: #FFD119;
+    font-size: 1.15em;
+}
+
+p.showingpot {
+    margin-top:-3px;
+    color: #FFD119;
+    font-size: 1.15em;
+}
+
+.turn {
+    position: absolute;
+    width: 800px;
+}
+
+#refresh {
+    cursor: pointer;
+    width: 55px;
+    height: 45px;
+    margin-left: 50%;
+    padding-bottom: 50px;
+    border-radius: 50%;
+    background-color: black;
+    border: 2px solid #f33f1b;
+    margin-left: 92%;
+    margin-top: 2.5%;
+}
+
+#brefresh {
+    padding-top: 3px;
+    margin-left: -1px;
+}
+
+#whoTurn {
+    margin-left:auto;
+    margin-right:auto;
+    color: white;
+    font-size: 3em;
+    width: 350px;
+    text-align: center;
+}

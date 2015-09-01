@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Casino Showdown - Texas Hold'em</title>
+    <link rel="stylesheet" href="css/game.css">
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type = "text/javascript" src = "javascript/checkHands.js"></script>
+    <script type = "text/javascript" src = "javascript/game.js"></script>
+</head>
+<body ondragstart = "return false;" ondrop = "return false;" >
+    <div class = "title">
+        <center><img src="img/title.png" alt = ""></center>
+    </div>
+    
+    <div class = "container">
+        
+        <div class = "turn"><h1 id = "whoTurn"></h1></div>
+
+        <!-- div to hold the players hands and inforation -->
+        <div class = "playersContainer">
+
+            <div class = "player">
+                <img class = "card" id = "00" name = "blank_card" src = "img/blank_card.png">
+                <img class = "card" id = "01" name = "blank_card" src = "img/blank_card.png">
+                <table>
+                    <tr>
+                        <td class = "name">Name: </td>
+                        <td class = "name" id = "pname"></td>
+                    </tr>
+                    <tr>
+                        <td class = "pot">Pot: </td>
+                        <td class = "pot" id = "ppot"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class = "ai1">
+                <img class = "card" id = "10" name = "blank_card" src = "img/blank_card.png">
+                <img class = "card" id = "11" name = "blank_card" src = "img/blank_card.png">
+                <table>
+                    <tr>
+                        <td class = "name">Name: </td>
+                        <td class = "name" id = "pname">HAL</td>
+                    </tr>
+                    <tr>
+                        <td class = "pot">Pot: </td>
+                        <td class = "pot" id = "aipot"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- div to hold the 5 showing cards -->
+        <div class = "showing">
+            <img class = "card" id = "20" name = "blank_card" src = "img/blank_card.png">
+            <img class = "card" id = "21" name = "blank_card" src = "img/blank_card.png">
+            <img class = "card" id = "22" name = "blank_card" src = "img/blank_card.png">
+            <img class = "card" id = "23" name = "blank_card" src = "img/blank_card.png">
+            <img class = "card" id = "24" name = "blank_card" src = "img/blank_card.png">
+            <table>
+                <tr>
+                    <td class = "pot">Pot: </td>
+                    <td class = "pot" id = "gamePot"></td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- div to hold the 4 buttons needed for the game -->
+        <div class = "buttons">
+            <button type = "button" id = "check">Check</button>
+            <button type = "button" id = "bid">Bid</button>
+            <button type = "button" id = "raise">Raise</button>
+            <button type = "button" id = "fold">Fold</button>
+        </div>
+       
+        <!-- Restart Button --> 
+        <button type = "button" id = "refresh"><img id = "brefresh" src = "img/refresh.png"></button>
+    </div>
+</body>
+</html>
+
